@@ -1,0 +1,7 @@
+{
+  "id": "sample-panel",
+  "name": "Conversation Health Panel",
+  "description": "Displays an analysis summary for the current thread and shows plugin-driven visualizations.",
+  "category": "panel",
+  "codeFile": "sample-plugin.js"
+}

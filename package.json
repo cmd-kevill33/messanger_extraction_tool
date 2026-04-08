@@ -1,0 +1,53 @@
+{
+  "name": "messanger_extraction_tool",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Messenger thread extraction and replay tool using network interception.",
+  "main": "dist/cli.js",
+  "bin": {
+    "orpheus-echo": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && vite build --config vite.config.ts",
+    "dev": "ts-node src/cli.ts",
+    "ui:dev": "vite --config vite.config.ts",
+    "ui:build": "vite build --config vite.config.ts",
+    "ui:preview": "vite preview --config vite.config.ts",
+    "test": "vitest run",
+    "setup:sh": "bash ./setup.sh",
+    "setup:ps1": "pwsh ./setup.ps1"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "axios": "^1.7.0",
+    "better-sqlite3": "^8.3.0",
+    "chalk": "^5.3.0",
+    "chokidar": "^3.5.3",
+    "commander": "^11.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nanoid": "^4.0.0",
+    "open": "^9.0.0",
+    "playwright": "^1.44.0",
+    "puppeteer": "^21.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.36",
+    "tailwindcss": "^3.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.1",
+    "vitest": "^1.0.0"
+  },
+  "license": "MIT"
+}
